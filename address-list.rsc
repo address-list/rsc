@@ -1,5 +1,5 @@
-# MikroTik RouterOS Address-lists
-# Update time: 2023-03-07 03:20:26 +0800
+# The OFFICIAL gfwlist here!
+# Update time: 2023-03-07 03:22:44 +0800
 #
 /ip/dns/static/remove [find type=FWD]
 /ip/dns/static/
