@@ -1,5 +1,5 @@
 # The OFFICIAL gfwlist here!
-# Update time: 2023-03-16 00:00:02 +0800
+# Update time: 2023-03-17 00:00:01 +0800
 #
 /ip/dns/static/remove [find type=FWD]
 /ip/dns/static/
