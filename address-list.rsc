@@ -3,6 +3,7 @@
 #
 /ip/dns/static/remove [find type=FWD]
 /ip/dns/static/
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openwrt.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=bing.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=000webhost.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=030buy.com
