@@ -1,10 +1,8 @@
 # The OFFICIAL gfwlist here!
-# Update time: 2023-03-19 00:00:02 +0800
+# Update time: 2023-03-24 07:54:38 +0800
 #
 /ip/dns/static/remove [find type=FWD]
 /ip/dns/static/
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openwrt.org
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=bing.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=000webhost.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=030buy.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=0rz.tw
@@ -90,7 +88,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=4rbtv.
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=4shared.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=4sqi.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=51.ca
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=51cg1.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=51jav.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=51luoben.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=5278.cc
@@ -142,6 +139,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=9news.
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=a-normal-day.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=a248.e.akamai.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=a5.com.ru
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=aadcdn.msauth.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=aamacau.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=abc.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=abc.net.au
@@ -1417,6 +1415,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dowei.
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=download.aircrack-ng.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=download.cnet.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=download.ithome.com.tw
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=downloads.openwrt.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dphk.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dpp.org.tw
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dpr.info
@@ -3209,7 +3208,10 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=locald
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=localpresshk.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=lockestek.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logbot.net
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=login.live.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=login.microsoftonline.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=login.target.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logincdn.msauth.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logiqx.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logos.com.hk
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=londonchinese.ca
@@ -3893,7 +3895,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=opente
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openvpn.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openvpn.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openwebster.com
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openwrt.org.cn
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=opml.radiotime.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=opus-gaming.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ordns.he.net
