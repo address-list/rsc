@@ -1,5 +1,5 @@
-# GFWList with EVERYTHING included
-# Update time: 2023-04-01 12:00:00 +0800
+# The OFFICIAL gfwlist here!
+# Update time: 2023-05-08 04:21:58 +0800
 #
 /ip/dns/static/remove [find type=FWD]
 /ip/dns/static/
@@ -139,6 +139,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=9news.
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=a-normal-day.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=a248.e.akamai.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=a5.com.ru
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=aadcdn.msauth.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=aamacau.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=abc.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=abc.net.au
@@ -256,8 +257,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=always
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=alwaysdata.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=alwaysvpn.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=am730.com.hk
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=amazon.co.jp
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=amazon.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ameblo.jp
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=americangreencard.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=americanunfinished.com
@@ -402,7 +401,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=atlasp
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=atnext.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=auctions.yahoo.co.jp
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=auntology.fandom.com
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=authorizeddns.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=authorizeddns.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=authorizeddns.us
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=autodraw.com
@@ -1303,7 +1301,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ddns.m
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ddns.mobi
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ddns.ms
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ddns.name
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ddns.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ddns.us
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=de-sci.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=deadline.com
@@ -1419,6 +1416,8 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=doujin
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dowei.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=download.aircrack-ng.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=download.cnet.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=download.mikrotik.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=downloads.openwrt.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dphk.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dpp.org.tw
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=dpr.info
@@ -3213,7 +3212,10 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=locald
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=localpresshk.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=lockestek.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logbot.net
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=login.live.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=login.microsoftonline.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=login.target.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logincdn.msauth.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logiqx.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=logos.com.hk
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=londonchinese.ca
@@ -3421,6 +3423,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=minzhu
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=miroguide.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mirrorbooks.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mirrormedia.mg
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=missav.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mist.vip
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mitao.com.tw
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mitbbs.com
@@ -3498,6 +3501,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mthruf
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mtw.tl
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mubi.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=muchosucko.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mudvod.tv
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=mullvad.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=multiply.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=multiproxy.org
@@ -3641,6 +3645,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=newipn
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=newlandmagazine.com.au
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=newmitbbs.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=newnews.ca
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=newpppp.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=news.cnyes.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=news.hk.msn.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=news.msn.com.tw
@@ -3709,6 +3714,19 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nitter
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nitter.pussthecat.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=niu.moe
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=niusnews.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod1.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod2.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod3.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod4.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod5.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod6.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod7.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod8.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivod9.tv
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivodi.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nivodz.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=njactb.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=njuice.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=nko.navy.mil
@@ -3883,7 +3901,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=opente
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openvpn.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openvpn.org
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openwebster.com
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=openwrt.org.cn
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=opml.radiotime.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=opus-gaming.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=ordns.he.net
@@ -4382,9 +4399,6 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s-drag
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s1.nudezz.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s1heng.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s1s1s1.com
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s3-ap-northeast-1.amazonaws.com
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s3-ap-southeast-2.amazonaws.com
-add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s3.amazonaws.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=s8forum.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=sa.hao123.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=sacks.com
@@ -4603,6 +4617,7 @@ add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=slutmo
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=slyip.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=slyip.net
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=sm-miracle.com
+add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=sm.ms
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=smartdnsproxy.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=smarthide.com
 add type=FWD match-subdomain=yes address-list=VPN forward-to=1.1.1.1 name=smchbooks.com
