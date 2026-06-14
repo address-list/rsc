@@ -1,4 +1,4 @@
-name: RouterOS DNS Forward address-list
+name: RouterOS address-list
 
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
         with:
           ref: main
 
-      - name: Generate RouterOS DNS Forward address-list
+      - name: Generate RouterOS address-list
         run: |
           set -e
 
@@ -49,5 +49,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "RouterOS Address-list $(date -u +%Y-%m-%d)"
+          git commit -m "RouterOS address-list $(date -u +%Y-%m-%d)"
           git push origin main
