@@ -1,4 +1,4 @@
-name: Update DNS List
+name: RouterOS DNS Forward
 
 on:
   schedule:
@@ -8,31 +8,46 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate DNS List
         run: |
-          # 给予脚本执行权限
-          chmod +x address-list
-          
-          # 直接运行本地脚本，生成临时列表文件
-          ./address-list -o /tmp/address-list.txt -l
+          set -e
 
-          # 格式化输出为 .rsc 文件
+          echo "📂 current directory:"
+          ls -lah
+
+          echo "📌 check file path:"
+          ls -lah .github/workflows/address-list
+
+          chmod +x .github/workflows/address-list
+
+          ./ .github/workflows/address-list -o /tmp/address-list.txt -l
+
+          echo "📄 check output:"
+          ls -lah /tmp/address-list.txt
+
           echo "# MikroTik RouterOS DNS Forward address-list.rsc" > address-list.rsc
           echo "# Update time: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
           echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
-          echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
           echo ":delay 10" >> address-list.rsc
-          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=&/g" /tmp/address-list.txt >> address-list.rsc
+
+          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=&/g" \
+            /tmp/address-list.txt >> address-list.rsc
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
           git add address-list.rsc
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update address-list.rsc" && git push)
+
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "Update address-list.rsc"
+            git push
+          )
