@@ -18,18 +18,7 @@ jobs:
         with:
           ref: main
 
-      - name: Archive old address-list.rsc
-        run: |
-          set -e
-
-          mkdir -p old
-
-          if [ -f address-list.rsc ]; then
-            TS=$(TZ=Asia/Shanghai date '+%Y%m%d%H%M%S')
-            mv address-list.rsc "old/address-list_${TS}.rsc"
-          fi
-          
-      - name: address-list.rsc
+      - name: gen
         run: |
           set -e
 
@@ -37,7 +26,7 @@ jobs:
           chmod +x gfwlist2dnsmasq.sh
           ./gfwlist2dnsmasq.sh -o address-list.txt -l
 
-          echo "# RouterOS DNS FWD (Forward) Records Address Lists" > address-list.rsc
+          echo "# Address Lists - RouterOS address-list using DNS FWD (Forward) records " > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
@@ -46,8 +35,7 @@ jobs:
           echo ":delay 10" >> address-list.rsc
           sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" address-list.txt >> address-list.rsc
 
-          
-      - name: Commit and push if changed
+      - name: git
         run: |
           set -e
 
