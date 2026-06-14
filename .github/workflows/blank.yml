@@ -49,5 +49,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update: address-list.rsc"
+          git commit -m "Update address-list.rsc"
           git push origin main
