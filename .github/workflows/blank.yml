@@ -1,34 +1,32 @@
-name: RouterOS DNS Forward
+name: Auto Update address-list.rsc
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    # 每天 18:00 CST = 10:00 UTC
+    - cron: "0 10 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          ref: main
 
-      - name: Generate DNS List
+      - name: Generate address list
         run: |
           set -e
 
-          echo "📂 current directory:"
-          ls -lah
+          curl -Lo /tmp/gfwlist2dnsmasq.sh https://raw.githubusercontent.com/cokebar/gfwlist2dnsmasq/master/gfwlist2dnsmasq.sh
+          chmod +x /tmp/gfwlist2dnsmasq.sh
 
-          echo "📌 check file path:"
-          ls -lah .github/workflows/address-list
-
-          chmod +x .github/workflows/address-list
-
-          ./ .github/workflows/address-list -o /tmp/address-list.txt -l
-
-          echo "📄 check output:"
-          ls -lah /tmp/address-list.txt
+          /tmp/gfwlist2dnsmasq.sh -o /tmp/address-list.txt -l
 
           echo "# MikroTik RouterOS DNS Forward address-list.rsc" > address-list.rsc
           echo "# Update time: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
@@ -37,17 +35,21 @@ jobs:
           echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
           echo ":delay 10" >> address-list.rsc
 
-          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=&/g" \
-            /tmp/address-list.txt >> address-list.rsc
+          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" /tmp/address-list.txt >> address-list.rsc
 
-      - name: Commit and push changes
+      - name: Commit and push if changed
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          set -e
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add address-list.rsc
 
-          git diff --quiet && git diff --staged --quiet || (
-            git commit -m "Update address-list.rsc"
-            git push
-          )
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Auto update address-list.rsc $(date -u +%Y-%m-%d)"
+          git push origin main
