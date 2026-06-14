@@ -49,5 +49,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "address-list.rsc $(date -u +%Y-%m-%d)"
+          git commit -m "address-list.rsc"
           git push origin main
