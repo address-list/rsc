@@ -1,5 +1,5 @@
-# RouterOS DNS Forward address-list
-# Last modified: 2026-06-14 21:42:39 CST
+# address-list.rsc
+# Last modified: 2026-06-14 21:47:02 CST
 #
 /ip dns static
 remove [find forward-to=1.1.1.1]
