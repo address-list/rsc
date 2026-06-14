@@ -1,7 +1,8 @@
-# MikroTik RouterOS DNS Forward address-list.rsc
-# Update time: 2026-06-14 21:14:20 CST
+# RouterOS Address-list
+# Last modified: 2026-06-14 21:31:02 CST
 #
 /ip dns static
+remove [find forward-to=1.1.1.1]
 remove [find forward-to=1.1.1.1]
 :delay 10
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=000webhost.com
