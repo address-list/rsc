@@ -26,7 +26,7 @@ jobs:
           chmod +x gfwlist2dnsmasq.sh
           ./gfwlist2dnsmasq.sh -o address-list.txt -l
 
-          echo "# address-list.rsc" > address-list.rsc
+          echo "# RouterOS DNS FWD (Forward) Records Address Lists" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
@@ -49,5 +49,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "address-list.rsc"
+          git commit -m "Update: address-list.rsc"
           git push origin main
