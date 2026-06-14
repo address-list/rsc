@@ -1,4 +1,4 @@
-name: Update address-list.rsc
+name: RouterOS Address-list
 
 on:
   schedule:
@@ -19,7 +19,7 @@ jobs:
         with:
           ref: main
 
-      - name: Generate address list
+      - name: Generate RouterOS Address-list
         run: |
           set -e
 
@@ -27,8 +27,8 @@ jobs:
           chmod +x gfwlist2dnsmasq.sh
           ./gfwlist2dnsmasq.sh -o address-list.txt -l
 
-          echo "# MikroTtik RouterOS DNS Forward address-list.rsc" > address-list.rsc
-          echo "# Update time: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
+          echo "# RouterOS Address-list" > address-list.rsc
+          echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
           echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
@@ -50,5 +50,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Auto update address-list.rsc $(date -u +%Y-%m-%d)"
+          git commit -m "RouterOS Address-list $(date -u +%Y-%m-%d)"
           git push origin main
