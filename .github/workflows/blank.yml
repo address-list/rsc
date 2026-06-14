@@ -27,7 +27,7 @@ jobs:
           chmod +x gfwlist2dnsmasq.sh
           ./gfwlist2dnsmasq.sh -o address-list.txt -l
 
-          echo "# Address Lists - RouterOS address-list using DNS FWD (Forward) records " > address-list.rsc
+          echo "# Address List - MikroTik RouterOS DNS FWD (Forward) Records" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
