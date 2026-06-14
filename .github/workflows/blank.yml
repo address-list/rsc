@@ -18,6 +18,17 @@ jobs:
         with:
           ref: main
 
+      - name: Archive old address-list.rsc
+        run: |
+          set -e
+
+          mkdir -p old
+
+          if [ -f address-list.rsc ]; then
+            TS=$(TZ=Asia/Shanghai date '+%Y%m%d%H%M%S')
+            mv address-list.rsc "old/address-list_${TS}.rsc"
+          fi
+          
       - name: address-list.rsc
         run: |
           set -e
@@ -35,6 +46,7 @@ jobs:
           echo ":delay 10" >> address-list.rsc
           sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" address-list.txt >> address-list.rsc
 
+          
       - name: Commit and push if changed
         run: |
           set -e
