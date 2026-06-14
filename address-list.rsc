@@ -1,5 +1,5 @@
 # RouterOS DNS FWD (Forward) Records Address Lists
-# Last modified: 2026-06-14 22:02:03 CST
+# Last modified: 2026-06-14 22:18:39 CST
 #
 /ip dns static
 remove [find forward-to=1.1.1.1]
