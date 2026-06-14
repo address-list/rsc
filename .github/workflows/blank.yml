@@ -2,7 +2,6 @@ name: RouterOS Address-list
 
 on:
   schedule:
-    # 每天 18:00 CST = 10:00 UTC
     - cron: "0 10 * * *"
   workflow_dispatch:
 
@@ -34,7 +33,7 @@ jobs:
           echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
           echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
           echo ":delay 10" >> address-list.rsc
-          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" /tmp/address-list.txt >> address-list.rsc
+          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" address-list.txt >> address-list.rsc
 
       - name: Commit and push if changed
         run: |
