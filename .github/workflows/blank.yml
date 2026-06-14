@@ -23,18 +23,17 @@ jobs:
         run: |
           set -e
 
-          curl -Lo /tmp/gfwlist2dnsmasq.sh https://raw.githubusercontent.com/cokebar/gfwlist2dnsmasq/master/gfwlist2dnsmasq.sh
-          chmod +x /tmp/gfwlist2dnsmasq.sh
+          curl -LO https://raw.githubusercontent.com/cokebar/gfwlist2dnsmasq/master/gfwlist2dnsmasq.sh
+          chmod +x gfwlist2dnsmasq.sh
+          ./gfwlist2dnsmasq.sh -o address-list.txt -l
 
-          /tmp/gfwlist2dnsmasq.sh -o /tmp/address-list.txt -l
-
-          echo "# MikroTik RouterOS DNS Forward address-list.rsc" > address-list.rsc
+          echo "# MikroTtik RouterOS DNS Forward address-list.rsc" > address-list.rsc
           echo "# Update time: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
           echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
+          echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
           echo ":delay 10" >> address-list.rsc
-
           sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" /tmp/address-list.txt >> address-list.rsc
 
       - name: Commit and push if changed
