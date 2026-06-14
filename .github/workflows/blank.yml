@@ -1,4 +1,4 @@
-name: RouterOS Address-list
+name: RouterOS DNS Forward address-list
 
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
         with:
           ref: main
 
-      - name: Generate RouterOS Address-list
+      - name: Generate RouterOS DNS Forward address-list
         run: |
           set -e
 
@@ -26,7 +26,7 @@ jobs:
           chmod +x gfwlist2dnsmasq.sh
           ./gfwlist2dnsmasq.sh -o address-list.txt -l
 
-          echo "# RouterOS Address-list" > address-list.rsc
+          echo "# RouterOS DNS Forward address-list" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
