@@ -1,4 +1,4 @@
-name: Auto Update address-list.rsc
+name: Update address-list.rsc
 
 on:
   schedule:
