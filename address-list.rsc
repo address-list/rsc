@@ -1,5 +1,5 @@
 # Address List - MikroTik RouterOS DNS FWD (Forward) Records
-# Last modified: 2026-06-18 00:34:47 CST
+# Last modified: 2026-06-18 03:21:40 CST
 #
 /ip dns static
 remove [find forward-to=1.1.1.1]
