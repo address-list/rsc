@@ -1,9 +1,7 @@
 # Address List - MikroTik RouterOS DNS FWD (Forward) Records
-# Last modified: 2026-06-19 00:23:46 CST
+# Last modified: 2026-06-19 03:22:48 CST
 #
 /ip dns static
-remove [find forward-to=1.1.1.1]
-:delay 10
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=000webhost.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=0rz.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=1-apple.com.tw
