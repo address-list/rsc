@@ -1,5 +1,5 @@
 # Address List - RouterOS DNS Resolvers Forward Records
-# Last modified: 2026-06-19 04:07:11 CST
+# Last modified: 2026-06-19 04:09:58 CST
 #
 /ip dns static
 remove [find address-list=1.1.1.1]
