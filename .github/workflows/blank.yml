@@ -32,8 +32,8 @@ jobs:
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
           #echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
-          echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
-          echo ":delay 10" >> address-list.rsc
+          #echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
+          #echo ":delay 10" >> address-list.rsc
           sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" address-list.txt >> address-list.rsc
 
       - name: git
