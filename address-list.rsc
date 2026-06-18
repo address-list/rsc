@@ -1,5 +1,5 @@
 # Address List - RouterOS DNS Resolvers Forward Records
-# Last modified: 2026-06-19 03:31:29 CST
+# Last modified: 2026-06-19 03:45:12 CST
 #
 /ip dns static
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=000webhost.com
