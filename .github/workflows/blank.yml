@@ -18,16 +18,16 @@ jobs:
         with:
           ref: main
 
-      - name: Download gfwlist
+      - name: Download
         run: |
-          curl -L https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -o gfwlist.txt
+          curl -Lo gfwlist.txt https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
           echo "new_hash=$(sha256sum gfwlist.txt | awk '{print $1}')" >> $GITHUB_ENV
 
       - name: Load old hash
         run: |
-          if [ -f .gfwlist_hash ]; then
-            echo "old_hash=$(cat .gfwlist_hash)" >> $GITHUB_ENV
+          if [ -f .sha256sum ]; then
+            echo "old_hash=$(cat .sha256sum)" >> $GITHUB_ENV
           else
             echo "old_hash=none" >> $GITHUB_ENV
           fi
@@ -63,12 +63,12 @@ jobs:
       - name: Commit changes
         if: steps.check.outputs.changed == 'true'
         run: |
-          echo "$new_hash" > .gfwlist_hash
+          echo "$new_hash" > .sha256sum
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add address-list.rsc address-list.txt .gfwlist_hash
+          git add address-list.rsc address-list.txt .sha256sum
 
           git commit -m "Update"
           git push origin main
