@@ -70,5 +70,5 @@ jobs:
 
           git add address-list.rsc address-list.txt .gfwlist_hash
 
-          git commit -m "Update address-list.rsc"
+          git commit -m "Update"
           git push origin main
