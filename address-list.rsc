@@ -1,5 +1,5 @@
-# Address List - MikroTik RouterOS DNS FWD (Forward) Records
-# Last modified: 2026-06-19 03:22:48 CST
+# Address List - RouterOS DNS Resolvers Forward Records
+# Last modified: 2026-06-19 03:31:29 CST
 #
 /ip dns static
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=000webhost.com
@@ -23,6 +23,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=1e
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=1lib.sk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=1point3acres.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=1pondo.tv
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=2.bahamut.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=2008xianzhang.info
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=2021hkcharter.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=2047.name
@@ -112,6 +113,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ad
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=adpl.org.hk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ads-twitter.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=adsense.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=adservice.google.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=adult-sex-games.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=adult.friendfinder.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=advanscene.com
@@ -315,7 +317,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ba
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=backend-v2.crixet.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bad.news
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=badiucao.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bahamut.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=baidu.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=baijie.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bailandaily.com
@@ -453,67 +454,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bl
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogjav.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bloglines.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bloglovin.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ae
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.al
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.am
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ba
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.be
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.bg
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ca
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.cat
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ch
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.cl
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.co.uk
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.ar
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.au
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.br
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.by
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.co
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.cy
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.ee
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.eg
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.es
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.mt
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.ng
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.tr
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.com.uy
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.cz
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.de
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.dk
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.fi
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.fr
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.gr
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.hk
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.hr
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.hu
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ie
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.in
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.is
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.it
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.jp
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.kr
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.li
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.lt
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.lu
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.md
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.mk
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.mx
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.my
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.nl
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.no
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.pe
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.pt
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.qa
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ro
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ru
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.se
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.sg
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.si
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.sk
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.sn
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.tw
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogspot.ug
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=blogtd.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bloodshed.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bloomberg.cn
@@ -604,6 +544,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c-
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c-span.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c-spanvideo.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c.mi.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c.pki.goog
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c2cx.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=c3pool.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cableav.tv
@@ -657,8 +598,10 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cd
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdef.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdig.info
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdjp.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn-china.ampproject.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn-images.mailchimp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn-telegram.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn.ampproject.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn.arstechnica.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn.jwplayer.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cdn.printfriendly.com
@@ -697,6 +640,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ch
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chatpdf.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chaturbate.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=checkgfw.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=checkin.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chengmingmag.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chenguangcheng.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chenpokong.com
@@ -760,6 +704,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ch
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chromeexperiments.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chromestatus.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ci-en.jp
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ci.android.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cia.gov
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cici.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ciciai.com
@@ -781,6 +726,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cl
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cldr.unicode.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clearsurance.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clementine-player.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clientservices.googleapis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clinica-tibet.ru
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clipconverter.cc
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cloud.dify.ai
@@ -800,6 +746,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cm
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cmx.im
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cn-proxy.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cn.fmnnow.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cn.investing.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cn.sandscotaicentral.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cn.shafaqna.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cn.theaustralian.com.au
@@ -839,6 +786,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=co
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=comparitech.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=compileheart.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=connect.facebook.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=connectivitycheck.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=conoha.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=contests.twilio.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cool18.com
@@ -867,6 +815,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cr
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=creaders.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=creativelab5.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cristyli.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crl.pki.goog
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crocotube.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crossfire.co.kr
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crossvpn.net
@@ -877,6 +826,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cr
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crunchyroll.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cruxpool.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=csdparty.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=csi.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=csis.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=csmonitor.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=css.pixnet.in
@@ -987,6 +937,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=di
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dizhuzhishang.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dl-laby.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dl.box.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dl.google.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dlive.tv
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dlsite.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dlyoutube.com
@@ -1242,6 +1193,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fi
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=findyoutube.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=findyoutube.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=firearmsworld.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=firebase-settings.crashlytics.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=firebaseio.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fireofliberty.info
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fireofliberty.org
@@ -1270,6 +1222,8 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fn
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fochk.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=focustaiwan.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fofg.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fonts.googleapis.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fonts.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fooooo.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=forbes.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=forefront.ai
@@ -1352,7 +1306,10 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g-
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g-queen.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g.ai
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g.co
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g0.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g0v.social
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g1.gstatic.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g2.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g6hentai.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gab.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gabocorp.com
@@ -1505,7 +1462,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=go
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ci
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.cl
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.cm
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.cn
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.co.ao
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.co.bw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.co.ck
@@ -1593,7 +1549,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=go
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.cz
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.de
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.dev
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.dj
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.dk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.dm
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.dz
@@ -1923,6 +1878,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hy
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=i-scmp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=i.111666.best
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=i.lithium.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=i.pki.goog
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=i2p2.de
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=i818hk.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=iam.soy
@@ -1967,6 +1923,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=im
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=imagevenue.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=imagezilla.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=imago-images.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=imasdk.googleapis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=imb.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=img.dlsite.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=img.ly
@@ -2522,7 +2479,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nc
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ndi.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nekoslovakia.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neo-miracle.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neodb.social 
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neodb.social
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neowin.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nephobox.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=netalert.me
@@ -2633,10 +2590,12 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ny
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nytimes.map.fastly.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nytimg.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nytstyle.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=o.pki.goog
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=o3o.ca
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=oanda.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=oann.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=obyte.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ocsp.pki.goog
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=october-review.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=octocaptcha.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=oculus.com
@@ -3006,6 +2965,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=re
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=redditspace.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=redditstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=redhotlabs.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=redirector.gvt1.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=referer.us
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=reflectivecode.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=relay.firefox.com
@@ -3069,6 +3029,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sa
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sacom.hk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sadistic-v.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sadpanda.us
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=safebrowsing.googleapis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=safechat.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=safeguarddefenders.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=safervpn.com
@@ -3271,6 +3232,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=squirrelvpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ss-link.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ssglobal.co
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ssl.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ssl.webpack.de
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sspanel.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ssr.tools
@@ -3289,6 +3251,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=st
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=static-economist.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=static.pocketcasts.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=static.shemalez.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=static.typepad.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=staticflickr.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=stboy.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=stc.com.sa
@@ -3562,6 +3525,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=to
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tokyo-porn-tube.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tokyocn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tomp3.cc
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tools.google.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=top.tv
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=top10vpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=topbtc.com
@@ -3587,6 +3551,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tracfone.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tradingview.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=translate.goog
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=translation.html
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=transparency.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=treemall.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=trendsmap.com
@@ -3662,7 +3627,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twiffo.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twiggit.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twimg.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twimg.edgesuite.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twip.me
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twipple.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=twishort.com
@@ -3735,6 +3699,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=un
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=uocn.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=up.audio
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=upbit.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=update.googleapis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=updates.tdesktop.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=upghsbc.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=upmedia.mg
@@ -4035,6 +4000,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=wu
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=wuw.red
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=wwitv.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.ajsands.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.ampproject.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.antd.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.aolnews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.bing.com
@@ -4044,6 +4010,8 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ww
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.eastturkistan.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.gmiddle.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.gmiddle.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.gov.tw
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.gstatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.hoyolab.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.hustlercash.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.idlcoyote.com
@@ -4060,6 +4028,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ww
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.skype.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.tablesgenerator.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.taiwanonline.cc
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.typepad.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.wan-press.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.websnapr.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=www.xicons.org
@@ -4110,7 +4079,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--ngstr-lra8j.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--noss43i.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--oiq.cc
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--p8j9a0d9c9a.xn--q9jyb4c
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--p8j9a0d9c9a.xn
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--u2u927b.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xn--vuqv2cf7wzyig79c.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xnpool.com
