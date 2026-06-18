@@ -3,7 +3,6 @@ name: address-list.rsc
 on:
   schedule:
     - cron: "0 * * * *"
-    
   workflow_dispatch:
 
 permissions:
@@ -19,36 +18,57 @@ jobs:
         with:
           ref: main
 
-      - name: gen
+      - name: Download gfwlist
+        run: |
+          curl -L https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt -o gfwlist.txt
+
+          echo "new_hash=$(sha256sum gfwlist.txt | awk '{print $1}')" >> $GITHUB_ENV
+
+      - name: Load old hash
+        run: |
+          if [ -f .gfwlist_hash ]; then
+            echo "old_hash=$(cat .gfwlist_hash)" >> $GITHUB_ENV
+          else
+            echo "old_hash=none" >> $GITHUB_ENV
+          fi
+
+      - name: Check update
+        id: check
+        run: |
+          if [ "$new_hash" = "$old_hash" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No update"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Updated detected"
+          fi
+
+      - name: Generate files
+        if: steps.check.outputs.changed == 'true'
         run: |
           set -e
 
-          curl -LO https://raw.githubusercontent.com/cokebar/gfwlist2dnsmasq/master/gfwlist2dnsmasq.sh
-          chmod +x gfwlist2dnsmasq.sh
-          ./gfwlist2dnsmasq.sh -o address-list.txt -l
+          base64 -d gfwlist.txt \
+          | sed -E 's/^\|\||^@@\|\||^!.*|^\[.*//g' \
+          | grep -Eo '([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}' \
+          | sed 's/^[-|]*//' \
+          | sort -u > address-list.txt
 
-          echo "# Address List - MikroTik RouterOS DNS FWD (Forward) Records" > address-list.rsc
+          echo "# Address List - RouterOS DNS Resolvers Forward Records" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
-          #echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
-          #echo "remove [find forward-to=1.1.1.1]" >> address-list.rsc
-          #echo ":delay 10" >> address-list.rsc
           sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" address-list.txt >> address-list.rsc
 
-      - name: git
+      - name: Commit changes
+        if: steps.check.outputs.changed == 'true'
         run: |
-          set -e
+          echo "$new_hash" > .gfwlist_hash
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add address-list.rsc
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
+          git add address-list.rsc address-list.txt .gfwlist_hash
 
           git commit -m "Update address-list.rsc"
           git push origin main
