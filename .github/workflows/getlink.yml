@@ -48,7 +48,7 @@ jobs:
         
        
        
-        echo "[$UPDATE_TIME] ${{ env.DOWNLOAD_URL }}" >> getlink.txt
+        echo "[$UPDATE_TIME] ${{ env.DOWNLOAD_URL }}" >> links.txt
         
     - name: Commit and Push Changes
       run: |
@@ -56,6 +56,6 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
        
-        git add getlink.txt
+        git add links.txt
         git diff-index --quiet HEAD || git commit -m "Update"
         git push
