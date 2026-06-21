@@ -57,5 +57,5 @@ jobs:
         
        
         git add google_chrmove_x64_stable.txt
-        git diff-index --quiet HEAD || git commit -m "Add Chrome URL v${{ env.VERSION }} to log"
+        git diff-index --quiet HEAD || git commit -m "Update"
         git push
