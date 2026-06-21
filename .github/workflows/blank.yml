@@ -1,4 +1,4 @@
-name: genrsclist
+name: genlist
 
 on:
   schedule:
