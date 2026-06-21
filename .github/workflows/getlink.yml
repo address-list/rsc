@@ -43,12 +43,8 @@ jobs:
 
     - name: Append URL to txt file
       run: |
-       
-        UPDATE_TIME=$(date -d "+8 hours" "+%Y-%m-%d %H:%M:%S")
-        
-       
-       
-        echo "[$UPDATE_TIME] ${{ env.DOWNLOAD_URL }}" >> links.txt
+
+        echo "${env.DOWNLOAD_URL}" >> links.txt
         
     - name: Commit and Push Changes
       run: |
