@@ -44,7 +44,7 @@ jobs:
     - name: Append URL to txt file
       run: |
 
-        echo "${env.DOWNLOAD_URL}" >> links.txt
+        echo "${{env.DOWNLOAD_URL}}" >> links.txt
         
     - name: Commit and Push Changes
       run: |
