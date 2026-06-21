@@ -48,7 +48,7 @@ jobs:
         
        
        
-        echo "[$UPDATE_TIME] [v${{ env.VERSION }}] X64 Stable Offline ${{ env.DOWNLOAD_URL }}" >> dl.google.com.txt
+        echo "[$UPDATE_TIME] Google Chrome X64 Stable Offline ${{ env.DOWNLOAD_URL }}" >> google_chrmove_x64_stable.txt
 
     - name: Commit and Push Changes
       run: |
@@ -56,6 +56,6 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
        
-        git add dl.google.com.txt
+        git add google_chrmove_x64_stable.txt
         git diff-index --quiet HEAD || git commit -m "Add Chrome URL v${{ env.VERSION }} to log"
         git push
