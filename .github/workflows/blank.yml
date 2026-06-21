@@ -1,4 +1,4 @@
-name: address-list.rsc
+name: genrsclist
 
 on:
   schedule:
