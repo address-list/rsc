@@ -48,7 +48,7 @@ jobs:
         
        
        
-        echo "[$UPDATE_TIME] [v${{ env.VERSION }}] ${{ env.DOWNLOAD_URL }}" >> dl.google.com.txt
+        echo "[$UPDATE_TIME] [v${{ env.VERSION }}] X64 Stable Offline ${{ env.DOWNLOAD_URL }}" >> dl.google.com.txt
 
     - name: Commit and Push Changes
       run: |
