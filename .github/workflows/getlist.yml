@@ -1,4 +1,4 @@
-name: genlist
+name: getlist
 
 on:
   schedule:
