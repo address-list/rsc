@@ -1,4 +1,4 @@
-name: getlist
+name: address-list
 
 on:
   schedule:
