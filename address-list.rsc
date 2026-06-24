@@ -1,5 +1,5 @@
 # Address List - RouterOS DNS Resolvers Forward Records
-# Last modified: 2026-06-19 22:51:11 CST
+# Last modified: 2026-06-25 00:10:04 CST
 #
 /ip dns static
 remove [find address-list=1.1.1.1]
@@ -1385,6 +1385,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ge
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=genius.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=geph.io
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=get.app
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=get.dappcdn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=get.dev
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=get.how
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=get.page
