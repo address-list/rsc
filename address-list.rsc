@@ -1,5 +1,5 @@
 # Address List - RouterOS DNS Resolvers Forward Records
-# Last modified: 2026-06-25 00:10:04 CST
+# Last modified: 2026-06-26 00:16:30 CST
 #
 /ip dns static
 remove [find address-list=1.1.1.1]
@@ -823,6 +823,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cr
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crazyshit.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crbug.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=crchina.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=creader.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=creaders.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=creativelab5.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cristyli.com
