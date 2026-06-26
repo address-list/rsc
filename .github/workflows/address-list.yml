@@ -54,7 +54,7 @@ jobs:
           | sed 's/^[-|]*//' \
           | sort -u > address-list.txt
 
-          echo "# Address List - RouterOS DNS Resolvers Forward Records" > address-list.rsc
+          echo "# RouterOS DNS Forward Address Lists" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
           echo "#" >> address-list.rsc
           echo "/ip dns static" >> address-list.rsc
