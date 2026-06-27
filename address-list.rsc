@@ -1,5 +1,5 @@
 # RouterOS DNS Forward Address Lists
-# Last modified: 2026-06-27 14:22:49 CST
+# Last modified: 2026-06-27 21:12:28 CST
 #
 /ip dns static
 remove [find address-list=1.1.1.1]
@@ -2395,6 +2395,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mf
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mgoon.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mgstage.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mh4u.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mhwindow.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=microvpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mihua.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mij.rip
