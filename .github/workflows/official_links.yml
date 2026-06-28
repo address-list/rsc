@@ -1,4 +1,4 @@
-name: getlink
+name: official_links.yml
 
 on:
   schedule:
@@ -44,7 +44,7 @@ jobs:
     - name: Append URL to txt file
       run: |
 
-        echo "${{env.DOWNLOAD_URL}}" >> links.txt
+        echo "${{env.DOWNLOAD_URL}}" >> official_links.txt
         
     - name: Commit and Push Changes
       run: |
@@ -52,6 +52,6 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
        
-        git add links.txt
+        git add official_links.txt
         git diff-index --quiet HEAD || git commit -m "Update"
         git push
