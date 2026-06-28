@@ -1,4 +1,4 @@
-name: address-lists.yml
+name: address-list.yml
 
 on:
   schedule:
