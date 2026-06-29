@@ -1,5 +1,5 @@
 # RouterOS DNS Forward Address Lists
-# Last modified: 2026-06-27 21:12:28 CST
+# Last modified: 2026-06-29 15:17:27 CST
 #
 /ip dns static
 remove [find address-list=1.1.1.1]
@@ -1119,6 +1119,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ex
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expecthim.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expekt.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=exploader.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expressnews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expressvpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=exrates.me
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=extmatrix.com
