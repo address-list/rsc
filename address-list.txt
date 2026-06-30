@@ -20,7 +20,6 @@
 1lib.sk
 1point3acres.com
 1pondo.tv
-2.bahamut.com.tw
 2008xianzhang.info
 2021hkcharter.com
 2047.name
@@ -37,7 +36,6 @@
 4everproxy.com
 4rbtv.com
 4shared.com
-4sqi.net
 500px.com
 500px.org
 51.ca
@@ -57,6 +55,7 @@
 6parknews.com
 7capture.com
 8-d.com
+85.17.73.31/
 85cc.us
 881903.com
 89-64.org
@@ -103,7 +102,6 @@ activpn.com
 aculo.us
 adcex.com
 addictedtocoffee.de
-addons.mozilla.org
 addyoutube.com
 adguard-vpn.com
 admin.recaptcha.net
@@ -111,7 +109,6 @@ admob.com
 adpl.org.hk
 ads-twitter.com
 adsense.com
-adservice.google.com
 adult-sex-games.com
 adult.friendfinder.com
 advanscene.com
@@ -139,7 +136,6 @@ ait.org.tw
 aiweiweiblog.com
 akademiye.org
 akamai.tvb.com
-akamaihd.net
 akiba-online.com
 akiba-web.com
 akile.io
@@ -313,7 +309,6 @@ avoision.com
 axios.com
 axureformac.com
 azirevpn.com
-azurewebsites.net
 b-ok.cc
 b.hatena.ne.jp
 babylonbee.com
@@ -549,7 +544,6 @@ c-est-simple.com
 c-span.org
 c-spanvideo.org
 c.mi.com
-c.pki.goog
 c2cx.com
 c3pool.com
 cableav.tv
@@ -603,10 +597,8 @@ cdbook.org
 cdef.org
 cdig.info
 cdjp.org
-cdn-china.ampproject.org
 cdn-images.mailchimp.com
 cdn-telegram.org
-cdn.ampproject.org
 cdn.arstechnica.net
 cdn.futustatic.com
 cdn.jwplayer.com
@@ -647,7 +639,6 @@ chatgpt.com
 chatpdf.com
 chaturbate.com
 checkgfw.com
-checkin.gstatic.com
 chengmingmag.com
 chenguangcheng.com
 chenpokong.com
@@ -711,7 +702,6 @@ chromecast.com
 chromeexperiments.com
 chromestatus.com
 ci-en.jp
-ci.android.com
 cia.gov
 cici.com
 ciciai.com
@@ -733,7 +723,6 @@ claude.com
 cldr.unicode.org
 clearsurance.com
 clementine-player.org
-clientservices.googleapis.com
 clinica-tibet.ru
 clipconverter.cc
 cloud.dify.ai
@@ -753,7 +742,6 @@ cmule.com
 cmx.im
 cn-proxy.com
 cn.fmnnow.com
-cn.investing.com
 cn.sandscotaicentral.com
 cn.shafaqna.com
 cn.theaustralian.com.au
@@ -793,7 +781,6 @@ communitychoicecu.com
 comparitech.com
 compileheart.com
 connect.facebook.net
-connectivitycheck.gstatic.com
 conoha.jp
 contests.twilio.com
 cool18.com
@@ -823,7 +810,6 @@ creader.com
 creaders.net
 creativelab5.com
 cristyli.com
-crl.pki.goog
 crocotube.com
 crossfire.co.kr
 crossvpn.net
@@ -834,7 +820,6 @@ crucial.com
 crunchyroll.com
 cruxpool.com
 csdparty.com
-csi.gstatic.com
 csis.org
 csmonitor.com
 css.pixnet.in
@@ -945,7 +930,6 @@ diyin.org
 dizhuzhishang.com
 dl-laby.jp
 dl.box.net
-dl.google.com
 dlive.tv
 dlsite.com
 dlyoutube.com
@@ -1203,7 +1187,6 @@ finchvpn.com
 findyoutube.com
 findyoutube.net
 firearmsworld.net
-firebase-settings.crashlytics.com
 firebaseio.com
 fireofliberty.info
 fireofliberty.org
@@ -1232,8 +1215,6 @@ fnc.ebc.net.tw
 fochk.org
 focustaiwan.tw
 fofg.org
-fonts.googleapis.com
-fonts.gstatic.com
 fooooo.com
 forbes.com
 forefront.ai
@@ -1345,10 +1326,7 @@ g-area.org
 g-queen.com
 g.ai
 g.co
-g0.gstatic.com
 g0v.social
-g1.gstatic.com
-g2.gstatic.com
 g6hentai.com
 gab.com
 gabocorp.com
@@ -1434,6 +1412,7 @@ gizlen.net
 gjczz.com
 glarity.app
 glass8.eu
+gle
 global.bing.com
 global.ssl.fastly.net
 globaljihad.net
@@ -1475,6 +1454,8 @@ goodnewsnetwork.org
 goodreaders.com
 goodreads.com
 goofind.com
+goog
+google
 google.ac
 google.ad
 google.ae
@@ -1918,10 +1899,8 @@ hybrid-analysis.com
 hyperbeam.com
 hyperrate.com
 hypothes.is
-i-scmp.com
 i.111666.best
 i.lithium.com
-i.pki.goog
 i2p2.de
 i818hk.com
 iam.soy
@@ -1949,7 +1928,6 @@ igfw.net
 igoogle.com
 igvita.com
 iicns.com
-iipdigital.usembassy.gov
 ilbe.com
 ilhamtohtiinstitute.org
 illawarramercury.com.au
@@ -1966,7 +1944,6 @@ imageshack.us
 imagevenue.com
 imagezilla.net
 imago-images.com
-imasdk.googleapis.com
 imb.org
 img.dlsite.jp
 img.ly
@@ -2650,12 +2627,10 @@ nytimes.com
 nytimes.map.fastly.net
 nytimg.com
 nytstyle.com
-o.pki.goog
 o3o.ca
 oanda.com
 oann.com
 obyte.org
-ocsp.pki.goog
 october-review.org
 octocaptcha.com
 oculus.com
@@ -2812,10 +2787,8 @@ picacomic.com
 picacomiccn.com
 picasaweb.com
 picsart.com
-picturedip.com
 picuki.com
 pigav.com
-pimg.tw
 pin-cong.com
 pin6.com
 pincong.rocks
@@ -3037,7 +3010,6 @@ redditmedia.com
 redditspace.com
 redditstatic.com
 redhotlabs.com
-redirector.gvt1.com
 referer.us
 reflectivecode.com
 relay.firefox.com
@@ -3102,7 +3074,6 @@ sacks.com
 sacom.hk
 sadistic-v.com
 sadpanda.us
-safebrowsing.googleapis.com
 safechat.com
 safeguarddefenders.com
 safervpn.com
@@ -3133,7 +3104,6 @@ scribd.com
 scriptspot.com
 search.aol.com
 search.com
-search.xxx
 search.yahoo.co.jp
 searx.me
 seattlefdc.com
@@ -3161,7 +3131,6 @@ sex.com
 sex3.com
 sex8.cc
 sexinsex.net
-sf.net
 sfshibao.com
 sftuk.org
 sgqt0j.launches.appsflyersdk.com
@@ -3312,7 +3281,6 @@ sproutcore.com
 squirrelvpn.com
 ss-link.com
 ssglobal.co
-ssl.gstatic.com
 ssl.webpack.de
 sspanel.net
 ssr.tools
@@ -3331,7 +3299,6 @@ startuplivingchina.com
 static-economist.com
 static.pocketcasts.com
 static.shemalez.com
-static.typepad.com
 staticflickr.com
 stboy.net
 stc.com.sa
@@ -3614,7 +3581,6 @@ tokenlon.im
 tokyo-porn-tube.com
 tokyocn.com
 tomp3.cc
-tools.google.com
 top.tv
 top10vpn.com
 topbtc.com
@@ -3643,7 +3609,6 @@ trade.longportapp.com
 tradeup.com
 tradingview.com
 translate.goog
-translation.html
 transparency.org
 treemall.com.tw
 trendsmap.com
@@ -3761,7 +3726,6 @@ ub0.cc
 ubddns.org
 uberproxy.net
 uc-japan.org
-uchicago.edu
 udn.com
 udn.com.tw
 udomain.hk
@@ -3793,7 +3757,6 @@ unwire.hk
 uocn.org
 up.audio
 upbit.com
-update.googleapis.com
 updates.tdesktop.com
 upghsbc.com
 upmedia.mg
@@ -4072,7 +4035,6 @@ wombo.ai
 woolyss.com
 woopie.jp
 woopie.tv
-wordpress.com
 work2icu.org
 workatruna.com
 workerempowerment.org
@@ -4096,9 +4058,7 @@ wunderground.com
 wuw.red
 wwitv.com
 www.ajsands.com
-www.ampproject.org
 www.antd.org
-www.aolnews.com
 www.bing.com
 www.clashverge.dev
 www.cmoinc.org
@@ -4106,8 +4066,6 @@ www.dmm.com
 www.eastturkistan.net
 www.gmiddle.com
 www.gmiddle.net
-www.gov.tw
-www.gstatic.com
 www.hoyolab.com
 www.hustlercash.com
 www.idlcoyote.com
@@ -4124,7 +4082,6 @@ www.shadowsocks.com
 www.skype.com
 www.tablesgenerator.com
 www.taiwanonline.cc
-www.typepad.com
 www.wan-press.org
 www.websnapr.com
 www.xicons.org
@@ -4165,20 +4122,6 @@ xinmiao.com.hk
 xjtravelguide.com
 xm.com
 xml-training-guide.com
-xn--11xs86f.icu
-xn--1jqvh729avzfcy2d8ummib.com
-xn--4gq171p.com
-xn--9iqy04a7fi01l.com
-xn--9pr62r24a.com
-xn--czq75pvv1aj5c.org
-xn--i2ru8q2qg.com
-xn--kcrv3utim32hx9f6qe.com
-xn--ngstr-lra8j.com
-xn--noss43i.com
-xn--oiq.cc
-xn--p8j9a0d9c9a.xn
-xn--u2u927b.com
-xn--vuqv2cf7wzyig79c.com
 xnpool.com
 xnxx.com
 xpud.org
