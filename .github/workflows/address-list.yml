@@ -20,9 +20,9 @@ jobs:
 
       - name: Download
         run: |
-          curl -Lo gfwlist.txt https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+          curl -Lo list.txt https://raw.githubusercontent.com/gfwlist/gfwlist/refs/heads/master/list.txt
 
-          echo "new_hash=$(sha256sum gfwlist.txt | awk '{print $1}')" >> $GITHUB_ENV
+          echo "new_hash=$(sha256sum list.txt | awk '{print $1}')" >> $GITHUB_ENV
 
       - name: Load old hash
         run: |
@@ -48,11 +48,11 @@ jobs:
         run: |
           set -e
 
-          base64 -d gfwlist.txt \
-          | sed -E 's/^\|\||^@@\|\||^!.*|^\[.*//g' \
-          | grep -Eo '([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}' \
-          | sed 's/^[-|]*//' \
-          | sort -u > address-list.txt
+          grep -E '^\||^\|\|' list.txt | \
+          grep -v '\*' | \
+          grep -v -- '--' | \
+          sed -E 's/^\|+//; s/https?:\/\///; s/^[.]+//; s/([a-zA-Z0-9.-]+\.[a-zA-Z]{2,}).*/\1/' | \
+          sort -u > address-list.txt
 
           echo "# RouterOS DNS Forward Address Lists" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
