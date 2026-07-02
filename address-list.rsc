@@ -1,5 +1,5 @@
 # RouterOS DNS Forward Address Lists
-# Last modified: 2026-06-30 13:56:48 CST
+# Last modified: 2026-07-02 20:00:29 CST
 #
 /ip dns static
 remove [find address-list=1.1.1.1]
@@ -3948,6 +3948,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=we
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=webpkgcache.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=webrtc.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=websdr.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=webshare.io
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=website.new
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=webwarper.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=wechatlawsuit.com
