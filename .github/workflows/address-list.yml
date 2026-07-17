@@ -1,0 +1,57 @@
+name: address-list.yml
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Download and Check Update
+        id: check
+        run: |
+          curl -Lo list.txt https://raw.githubusercontent.com/gfwlist/gfwlist/refs/heads/master/list.txt
+          if sha1sum -c .sha1sum --status 2>/dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No update detected."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Update detected or first run."
+          fi
+
+      - name: Generate files
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          set -e
+          grep -E '^\||^\|\|' list.txt | \
+          grep -v '\*' | \
+          grep -v -- '--' | \
+          sed -E 's/^\|+//; s/https?:\/\///; s/^[.]+//; s/([a-zA-Z0-9.-]+\.[a-zA-Z]{2,}).*/\1/' | \
+          sort -u > address-list.txt
+          echo "# MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator" > address-list.rsc
+          echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
+          echo "# Telegram @hkgali https://t.me/hkgali" >> address-list.rsc
+          echo "# " >> address-list.rsc
+          echo "/ip dns static" >> address-list.rsc
+          echo "remove [find address-list=1.1.1.1]" >> address-list.rsc
+          sed "s/^/add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=/g" address-list.txt >> address-list.rsc
+
+      - name: Commit changes
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          sha1sum list.txt > .sha1sum
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add address-list.rsc address-list.txt .sha1sum
+          git commit -m "Update"
+          git push origin main

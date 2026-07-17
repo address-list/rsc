@@ -1,0 +1,36 @@
+name: Clean Git History
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Clean history
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          BRANCH=$(git branch --show-current)
+
+          git checkout --orphan clean_branch
+
+          git add -A
+          git commit -m "Delete"
+
+          git branch -D $BRANCH
+          git branch -m $BRANCH
+
+      - name: Force push
+        run: |
+          git push --force origin HEAD:${{ github.ref_name }}
