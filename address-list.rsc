@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-02 22:19:33 CST
+# Last modified: 2026-08-06 18:20:38 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -299,7 +299,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=at
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=atnext.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=auctions.yahoo.co.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=audacy.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=auntology.fandom.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=autodraw.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=av.movie
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=av01.tv
@@ -1147,6 +1146,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fa
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=falunhr.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=famunion.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fanbox.cc
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fandom.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fangeqiang.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fanglizhi.info
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fangong.org
@@ -1839,7 +1839,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ho
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=home.saxo
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=homedepot.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=homeservershow.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hongkong.fandom.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hongkongfp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hongzhi.li
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=honven.xyz
