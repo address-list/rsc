@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-06 18:20:38 CST
+# Last modified: 2026-08-08 02:06:05 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -1423,7 +1423,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gi
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gjczz.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=glarity.app
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=glass8.eu
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gle
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=global.bing.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=global.ssl.fastly.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=globaljihad.net
@@ -1465,8 +1464,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=go
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goodreaders.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goodreads.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goofind.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goog
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ac
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ad
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ae
