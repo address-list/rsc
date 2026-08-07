@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-08 04:01:44 CST
+# Last modified: 2026-08-08 04:29:53 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -62,6 +62,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=6p
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=6parknews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=7capture.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=8-d.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=85.17.73.31
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=85cc.us
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=881903.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=89-64.org
@@ -1422,6 +1423,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gi
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gjczz.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=glarity.app
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=glass8.eu
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gle
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=global.bing.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=global.ssl.fastly.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=globaljihad.net
@@ -1463,6 +1465,8 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=go
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goodreaders.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goodreads.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goofind.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=goog
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ac
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ad
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=google.ae
@@ -2523,7 +2527,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nc
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ndi.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nekoslovakia.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neo-miracle.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neodb.social
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neodb.social 
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neowin.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nephobox.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=netalert.me
