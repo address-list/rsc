@@ -36,7 +36,11 @@ jobs:
           grep '^|' list.txt | \
           grep -v '\*' | \
           grep -v -- '--' | \
-          grep -oP '\b(?:[a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}\b' | \
+          sed 's/||//g' | \
+          sed 's/|//g' | \
+          sed 's|http://||g' | \
+          sed 's|https://||g' | \
+          sed 's|/.*||' | \
           sort -u > address-list.txt
           echo "# MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
