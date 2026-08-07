@@ -33,11 +33,10 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         run: |
           set -e
-          grep -E '^\||^\|\|' list.txt | \
+          grep '^|' list.txt | \
           grep -v '\*' | \
           grep -v -- '--' | \
-          sed -E 's/^\|+//; s/https?:\/\///; s/^[.]+//; s/([a-zA-Z0-9.-]+\.[a-zA-Z]{2,}).*/\1/' | \
-          grep '\.' | \
+          grep -oP '\b(?:[a-zA-Z0-9][-a-zA-Z0-9]*\.)+[a-zA-Z]{2,}\b' | \
           sort -u > address-list.txt
           echo "# MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
