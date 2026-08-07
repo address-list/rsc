@@ -36,6 +36,7 @@ jobs:
           grep '^|' list.txt | \
           grep -v '\*' | \
           grep -v -- '--' | \
+          sed '/\./!d' | \
           sed 's/||//g' | \
           sed 's/|//g' | \
           sed 's|http://||g' | \
