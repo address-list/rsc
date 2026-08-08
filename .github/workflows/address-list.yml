@@ -43,7 +43,7 @@ jobs:
           sed 's|https://||g' | \
           sed 's|/.*||' | \
           grep -vE '^([0-9]{1,3}\.){3}[0-9]{1,3}$' | \
-          { cat -; echo "blogger.com"; } | \
+          { cat -; echo "blogspot.com"; } | \
           sort -u > address-list.txt
           echo "# MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator" > address-list.rsc
           echo "# Last modified: $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S') CST" >> address-list.rsc
