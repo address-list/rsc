@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-09 02:26:39 CST
+# Last modified: 2026-08-09 17:25:15 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -132,6 +132,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ag
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=agro.hk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ai.dev
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ai.studio
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aihub.top
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aiosearch.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aiph.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=airconsole.com
@@ -343,6 +344,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ba
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=barnabu.co.uk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bartender.dowjones.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=barton.de
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=basemaps.arcgis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bastillepost.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bayvoice.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bb-chat.tv
@@ -1107,6 +1109,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ex
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expatshield.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expecthim.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expekt.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=experience.arcgis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=exploader.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expressnews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=expressvpn.com
