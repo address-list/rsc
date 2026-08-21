@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-19 11:34:30 CST
+# Last modified: 2026-08-21 11:38:46 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -503,6 +503,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=br
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=breakgfw.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=breakingtweets.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=breakwall.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=briarproject.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=brill.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=brizzly.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=broadpressinc.com
@@ -645,6 +646,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ch
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chat.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chat.lmsys.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chatgpt.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chatgpt.site
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chatpdf.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chaturbate.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=checkgfw.com
