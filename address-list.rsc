@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-22 14:16:05 CST
+# Last modified: 2026-08-22 15:20:40 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -1804,6 +1804,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hi
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=himemix.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hindustantimes.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hinet.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=historylines.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hitbtc.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hitomi.la
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hive.blog
@@ -2144,6 +2145,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ki
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kinmen.travel
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kinokuniya.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kiwi.kz
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kiwix.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kk-whys.co.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kkbox.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kknews.cc
@@ -2339,6 +2341,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ma
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=maven.neoforged.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mcadforums.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mcaf.ee
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mceindex.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mcusercontent.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=md-t.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=me.me
