@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-22 15:20:40 CST
+# Last modified: 2026-08-23 15:22:16 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -226,6 +226,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ap
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=api.palworldgame.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=api.pureapk.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=api.recaptcha.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=api.shuaiapi.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=api.steampowered.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=api5.futunn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=apiary.io
@@ -4121,6 +4122,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=x.
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=x.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=x.company
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=x3guide.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=x86.fr
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xbabe.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xbookcn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=xbtce.com
