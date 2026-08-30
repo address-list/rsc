@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-28 15:10:01 CST
+# Last modified: 2026-08-30 23:30:46 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -1393,6 +1393,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ge
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getlantern.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getmalus.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getmdl.io
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getmonero.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getoutline.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getsession.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=getsync.com
@@ -2587,6 +2588,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ng
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nhentai.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nic.cz.cc
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nic.gov
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nicoseiga.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nicovideo.jp
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nightswatch.top
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nikke-en.com
