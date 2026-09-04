@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-08-30 23:30:46 CST
+# Last modified: 2026-09-04 19:47:06 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -841,6 +841,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cs
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=csuchen.de
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=csw.org.uk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ct.org.tw
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ctee.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ctinets.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ctinews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ctinsider.com
@@ -1823,6 +1824,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hkcoc.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hkcoc.weather.com.hk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hkdc.us
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hkej.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hket.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hkfaa.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=hkgalden.com
@@ -2243,6 +2245,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=li
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=linktr.ee
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=linux.do
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=linux.org.hk
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=linux.sb
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=liquiditytp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=liquidvpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=listennotes.com
