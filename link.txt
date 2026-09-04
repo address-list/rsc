@@ -67,3 +67,4 @@ http://edgedl.me.gvt1.com/edgedl/release2/chrome/adkv2xogzxg7wnm7qpc3uyq346kq_15
 http://edgedl.me.gvt1.com/edgedl/release2/chrome/adkv2xogzxg7wnm7qpc3uyq346kq_152.0.7977.65/152.0.7977.65_chrome_installer_uncompressed.exe
 http://edgedl.me.gvt1.com/edgedl/release2/chrome/acjhfpyjgspz3vyycvrpc3zsj4da_152.0.7977.76/152.0.7977.76_chrome_installer_uncompressed.exe
 http://edgedl.me.gvt1.com/edgedl/release2/chrome/acjhfpyjgspz3vyycvrpc3zsj4da_152.0.7977.76/152.0.7977.76_chrome_installer_uncompressed.exe
+http://edgedl.me.gvt1.com/edgedl/release2/chrome/acq2f3uzn7ecgyxc6aabdb56yyna_152.0.7977.83/152.0.7977.83_chrome_installer_uncompressed.exe
