@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-09-21 09:47:36 CST
+# Last modified: 2026-09-21 22:34:08 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -695,6 +695,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ch
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chinesegay.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chinesen.de
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chinesenews.net.au
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chineseposters.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chineseradioseattle.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chineseupress.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=chingcheong.com
