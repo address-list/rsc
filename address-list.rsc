@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-09-26 13:37:41 CST
+# Last modified: 2026-09-26 22:45:50 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -3834,6 +3834,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=va
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=vansky.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=vaticannews.va
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=vatn.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=vava8.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=vcf-online.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=vcfbuilder.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=veed.io
