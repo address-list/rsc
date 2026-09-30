@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-09-26 22:45:50 CST
+# Last modified: 2026-09-30 22:16:36 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -1336,6 +1336,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fu
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=futustatic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fututrade.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fututrustee.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fuyin116.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fw.cm
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fxcm-chinese.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=fxnetworks.com
@@ -2486,6 +2487,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mt
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mubi.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mullvad.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=multiply.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=muse.ai
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=music.amazon.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=musixmatch.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=muzi.com
