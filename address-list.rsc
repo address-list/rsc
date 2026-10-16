@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-10-06 17:27:50 CST
+# Last modified: 2026-10-16 23:01:30 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -63,6 +63,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=6p
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=6parker.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=6parknews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=7capture.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=7x24hrs.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=8-d.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=85cc.us
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=881903.com
@@ -2397,7 +2398,9 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=me
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=meripet.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=merit-times.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=messenger.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=meta.ai
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=meta.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=metaaivm.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=metafilter.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=metamask.io
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=metart.com
