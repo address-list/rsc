@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-10-16 23:01:30 CST
+# Last modified: 2026-10-23 21:01:30 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -800,6 +800,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=co
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=compileheart.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=connect.facebook.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=conoha.jp
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=console.typesafe.ai
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=contests.twilio.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cool18.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=coolaler.com
@@ -1355,6 +1356,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g.
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g.co
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g0v.social
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=g6hentai.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ga.jspm.io
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gab.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gabocorp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gagaoolala.com
