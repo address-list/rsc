@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-10-23 21:01:30 CST
+# Last modified: 2026-10-25 00:18:00 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -12,6 +12,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=10
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=10musume.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=123av.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=123av.me
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=123av.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=12bet.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=12vpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=12vpn.net
@@ -2160,6 +2161,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kh
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kichiku-doujinko.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kik.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=killwall.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kimootoko.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kindle4rss.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kindleren.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=kingdomsalvation.org
@@ -2442,6 +2444,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mi
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=minhhue.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=miningpoolhub.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ministrybooks.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=minkch.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=minzhuzhongguo.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=miraheze.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mirdc.org.tw
@@ -2503,6 +2506,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mo
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mosavi.io
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=motherless.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=movements.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=movie.eroterest.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=moviefap.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mpettis.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mpfinance.com
@@ -2636,6 +2640,9 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ni
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=niu.moe
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=niusnews.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=njactb.org
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=njav.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=njav.tv
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=njavtv.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nlfreevpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nmsl.website
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nnews.eu
@@ -2887,6 +2894,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=pl
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=plurk.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=plus.codes
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=pmatehunter.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=po-kaki-to.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=po2b.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=podbean.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=podcast.co
@@ -4338,6 +4346,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zo
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zophar.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zorrovpn.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zozotown.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zozovideo.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zpn.im
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zspeeder.me
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=zuo.la
