@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-10-25 00:18:00 CST
+# Last modified: 2026-10-30 15:46:59 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -207,6 +207,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=an
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=anonfiles.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=anonymouse.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=anthonycalzadilla.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=anthropic.auth0.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=anthropic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=antiwave.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=antpool.com
@@ -514,6 +515,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=br
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=brookings.edu
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=brutaltgp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bsky.app
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bsky.chat
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bsky.network
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bsky.social
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=bt4g.org
@@ -739,7 +741,10 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ck
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clashyun.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=classicalguitarblog.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=claude.ai
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=claude.app
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=claude.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=claudemcpcontent.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=claudeusercontent.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=cldr.unicode.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clearsurance.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=clementine-player.org
