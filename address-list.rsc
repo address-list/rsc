@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-11-04 02:05:58 CST
+# Last modified: 2026-11-05 20:48:01 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -2373,7 +2373,6 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ma
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=matters.town
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=matthewdgreen.wordpress.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mattwilcox.net
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=maven.neoforged.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mcadforums.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mcaf.ee
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=mceindex.com
@@ -2582,6 +2581,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ne
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nekoslovakia.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neo-miracle.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neodb.social
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neoforged.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=neowin.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=nephobox.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=netalert.me
