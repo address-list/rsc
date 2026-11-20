@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-11-14 02:10:14 CST
+# Last modified: 2026-11-20 12:41:09 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -1021,6 +1021,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dt
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dtiblog.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dtic.mil
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=dubox.com
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=duck.ai
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=duck.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=duckduckgo.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=duckmylife.com
@@ -1370,9 +1371,9 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ga
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gabocorp.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gagaoolala.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=galenwu.com
-add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=game735.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gamer.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gamez.com.tw
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gamma.app
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ganjing.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ganjingworld.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=gaoming.net
@@ -3319,6 +3320,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=so
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sotwe.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=soubory.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=soulcaliburhentai.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=soulogic.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=soundcloud.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=soundofhope.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=soundon.fm
