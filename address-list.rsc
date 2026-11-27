@@ -1,5 +1,5 @@
 # MikroTik RouterOS DNS Forward Rules using Great Firewall Lists generator
-# Last modified: 2026-11-21 05:34:23 CST
+# Last modified: 2026-11-28 03:41:33 CST
 # Telegram @hkgali https://t.me/hkgali
 # 
 /ip dns static
@@ -137,6 +137,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ag
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=agro.hk
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ai.dev
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=ai.studio
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aicu.cc
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aidc.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aihub.top
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=aiosearch.com
@@ -900,6 +901,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=da
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=daliulian.org
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=danbooru.donmai.us
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=danke4china.net
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=danmakus.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=darmau.co
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=darpa.mil
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=darrenliuwei.com
@@ -3350,6 +3352,7 @@ add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=so
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=southnews.com.tw
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=southpark.cc.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=sowers.org.hk
+add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=spacedesk.net
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=spaceforce.mil
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=spaces.hightail.com
 add type=FWD match-subdomain=yes forward-to=1.1.1.1 address-list=1.1.1.1 name=spacex.com
